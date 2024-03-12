@@ -1,0 +1,22 @@
+body {
+    background-color: #FFE2D1; /* You can replace #f0f0f0 with any color you prefer */
+}
+
+.header button {
+    /* Your button styles here */
+    background-color: #844749; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.header button:hover {
+    background-color: #552729; /* Darker Green */
+}
