@@ -1,22 +1,60 @@
 body {
     background-color: #FFE2D1; /* You can replace #f0f0f0 with any color you prefer */
+    font-family: "YesevaOne-Regular";
+    font-size: 70px;
+    text-align: center;
 }
 
 .header button {
     /* Your button styles here */
+    font-family: "YesevaOne-Regular";
+    /* font-style: italic; */
     background-color: #844749; 
-    border: none;
+    /* border-bottom: 100px; */
     color: white;
-    padding: 10px 20px;
+    padding: 10px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 25px;
+    margin: 0.1px 20px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 8px;
+    transform: skewX(-12deg);
+    border: 3px solid #000000; /* Add a solid border */
 }
 
 .header button:hover {
     background-color: #552729; /* Darker Green */
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px; /* Adjust the top margin of the header */
+  }
+  
+  .header p {
+    margin-bottom: 10px; /* Add space between header text and buttons */
+  }
+  
+  .button-container {
+    display: flex;
+  }
+  
+  .button-container button {
+    margin: 100 5px; /* Add space between buttons */
+  }
+  .hello-text {
+    color: rgb(7, 7, 8); /* Change color for "Hello" */
+  }
+  
+  .name-text {
+    color: #9B4819; /* Change color for "I am Ari." */
+  }
+@font-face {
+    font-family: "YesevaOne-Regular";
+    src: url("../YesevaOne-Regular.ttf");
 }

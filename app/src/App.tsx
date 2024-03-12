@@ -1,31 +1,45 @@
-
 import './App.css';
 import Header from "./headerStuff/header.tsx"
+import Project from "./projects/project.tsx"
+import Exp from "./expierence/exp.tsx"
+import Home from "./home/home.tsx"
 
-import React, { useState } from 'react';
-/**
- * This is the highest level component!
- */
+import React, { Dispatch, useState, SetStateAction } from 'react';
+
 function App() {
   const [headerType, setHeaderType] = useState<string>("Home");
+  let SecondComponent: React.FC | null = null;
 
-    return (
-      <div className="overarching component">
+  const handleHeaderTypeChange: Dispatch<SetStateAction<string>> = (newHeaderType: SetStateAction<string>) => {
+    setHeaderType(newHeaderType);
+  };
 
-        <div className="header">
-          <Header
-            headerType={"headerType"} // TODO this may be wron
-            setHeaderType={function (value: React.SetStateAction<string>): void {
-              throw new Error('Function not implemented.');
-            } }          />
-        </div>
-        <div className="temp">
-          <p className="temp-header">
-            <h1>this is the second component and it will be one of the selected tabs withd efault being home </h1>
-          </p>
-        </div>
-        </div>
-    );
+  if (headerType === "Home") {
+    SecondComponent = Home;
+  } else if (headerType === "Experience") {
+    SecondComponent = Exp;
+  } else if (headerType === "Projects") {
+    SecondComponent = Project;
+  } else {
+    // Default component when headerType doesn't match any condition
+    SecondComponent = Home; // You can set a default component here
   }
-  
-  export default App;
+
+  return (
+    <div className="overarching component">
+      <div className="header">
+        <Header
+          headerType={headerType} // Pass the state variable
+          setHeaderType={handleHeaderTypeChange}
+        />
+      </div>
+      <div className="temp">
+        <p className="temp-header">
+          <h1></h1>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default App;
