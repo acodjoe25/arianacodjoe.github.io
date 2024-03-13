@@ -1,0 +1,33 @@
+.bioText {
+    background-color: #FFE2D1; /* You can replace #f0f0f0 with any color you prefer */
+    font-family: "YesevaOne-Regular";
+    font-size: 20px;
+    border: 10px solid #ffffff; 
+    padding: 10px; 
+    align : center
+}
+
+.whole {
+    display: flex; /* Display the two subdivisions in a row */
+    /* padding: 50px;  */
+    padding: 30px 100px 20px 40px; 
+}
+.git {
+    color: #333;
+    font-size: 20px;
+}
+.link {
+    color: #333;
+    font-size: 20px;
+}
+.me {
+    flex: 1; /* Let the image subdivision grow to fill available space */
+    margin-right: 50px; /* Add some space between the subdivisions */
+    padding: 20px; 
+}
+
+.myImage {
+    width: 350px; 
+    height: 350px; 
+    /* border: 2px solid #ffffff; */
+}

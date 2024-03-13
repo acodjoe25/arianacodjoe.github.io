@@ -21,22 +21,19 @@ function App() {
   } else if (headerType === "Projects") {
     SecondComponent = Project;
   } else {
-    // Default component when headerType doesn't match any condition
-    SecondComponent = Home; // You can set a default component here
+    SecondComponent = Home; 
   }
 
   return (
     <div className="overarching component">
       <div className="header">
         <Header
-          headerType={headerType} // Pass the state variable
+          headerType={headerType} 
           setHeaderType={handleHeaderTypeChange}
         />
       </div>
       <div className="temp">
-        <p className="temp-header">
-          <h1></h1>
-        </p>
+      {SecondComponent && <SecondComponent />} {/* Render SecondComponent dynamically */}
       </div>
     </div>
   );
