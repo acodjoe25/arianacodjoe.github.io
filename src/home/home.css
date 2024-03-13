@@ -12,18 +12,21 @@
     /* padding: 50px;  */
     padding: 30px 100px 20px 40px; 
 }
-.git {
+/* .git {
     color: #333;
     font-size: 20px;
-}
-.link {
+} */
+/* .link .git {
     color: #333;
     font-size: 20px;
-}
+} */
 .me {
     flex: 1; /* Let the image subdivision grow to fill available space */
     margin-right: 50px; /* Add some space between the subdivisions */
     padding: 20px; 
+    display: flex;
+    flex-direction: column; /* Arrange the elements vertically */
+    align-items: center; 
 }
 
 .myImage {
@@ -31,3 +34,30 @@
     height: 350px; 
     /* border: 2px solid #ffffff; */
 }
+.git {
+    padding: 1px 6px;
+    border: 2px outset buttonborder;
+    border-radius: 3px;
+    color: rgb(244, 246, 244);
+    background-color: #9B4819;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px; 
+}
+.link {
+    padding: 1px 6px;
+    border: 2px outset buttonborder;
+    border-radius: 3px;
+    color: rgb(251, 251, 251);
+    background-color: #9B4819;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px; 
+    
+}
+.socials {
+    margin-right: 50px; /* Add some space between the subdivisions */
+    padding: 20px; 
+}
+
