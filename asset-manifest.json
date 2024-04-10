@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d1770896.css",
+    "main.js": "/static/js/main.323e8043.js",
+    "static/js/453.a6a97343.chunk.js": "/static/js/453.a6a97343.chunk.js",
+    "static/media/YesevaOne-Regular.ttf": "/static/media/YesevaOne-Regular.1f254f07e3595cf0c334.ttf",
+    "index.html": "/index.html",
+    "main.d1770896.css.map": "/static/css/main.d1770896.css.map",
+    "main.323e8043.js.map": "/static/js/main.323e8043.js.map",
+    "453.a6a97343.chunk.js.map": "/static/js/453.a6a97343.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1770896.css",
+    "static/js/main.323e8043.js"
+  ]
+}
